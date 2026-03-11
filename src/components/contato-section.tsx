@@ -1,4 +1,5 @@
 import { ScrollReveal } from "@/components/scroll-reveal";
+import { VanishInput } from "@/components/ui/vanish-input";
 
 export function ContatoSection() {
   return (
@@ -111,37 +112,63 @@ export function ContatoSection() {
                 Envie uma mensagem
               </h3>
               <form className="grid gap-5">
-                {[
-                  { id: "name", label: "Nome completo", type: "text", placeholder: "Seu nome" },
-                  { id: "email", label: "E-mail", type: "email", placeholder: "seu@email.com" },
-                  { id: "phone", label: "Telefone / WhatsApp", type: "tel", placeholder: "(48) 99999-9999" },
-                ].map((field) => (
-                  <div key={field.id}>
-                    <label
-                      htmlFor={field.id}
-                      className="text-small"
-                      style={{ display: "block", marginBottom: "var(--space-2)", fontWeight: 500 }}
-                    >
-                      {field.label}
-                    </label>
-                    <input
-                      type={field.type}
-                      id={field.id}
-                      placeholder={field.placeholder}
-                      style={{
-                        width: "100%",
-                        padding: "var(--space-3) var(--space-4)",
-                        border: "1px solid var(--color-gray-200)",
-                        backgroundColor: "var(--color-gray-50)",
-                        fontSize: "var(--font-size-base)",
-                        fontFamily: "var(--font-body)",
-                        color: "var(--color-black)",
-                        outline: "none",
-                        transition: "border-color var(--transition-base)",
-                      }}
-                    />
-                  </div>
-                ))}
+                <div>
+                  <label
+                    htmlFor="name"
+                    className="text-small"
+                    style={{ display: "block", marginBottom: "var(--space-2)", fontWeight: 500 }}
+                  >
+                    Nome completo
+                  </label>
+                  <VanishInput
+                    id="name"
+                    type="text"
+                    name="name"
+                    placeholders={[
+                      "Seu nome completo",
+                      "Como podemos te chamar?",
+                      "Digite seu nome...",
+                    ]}
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="email"
+                    className="text-small"
+                    style={{ display: "block", marginBottom: "var(--space-2)", fontWeight: 500 }}
+                  >
+                    E-mail
+                  </label>
+                  <VanishInput
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholders={[
+                      "seu@email.com",
+                      "Para retornarmos o contato",
+                      "Seu melhor e-mail...",
+                    ]}
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="phone"
+                    className="text-small"
+                    style={{ display: "block", marginBottom: "var(--space-2)", fontWeight: 500 }}
+                  >
+                    Telefone / WhatsApp
+                  </label>
+                  <VanishInput
+                    id="phone"
+                    type="tel"
+                    name="phone"
+                    placeholders={[
+                      "(48) 99999-9999",
+                      "Seu número com DDD",
+                      "WhatsApp preferencial",
+                    ]}
+                  />
+                </div>
                 <div>
                   <label
                     htmlFor="subject"
@@ -152,6 +179,7 @@ export function ContatoSection() {
                   </label>
                   <select
                     id="subject"
+                    name="subject"
                     style={{
                       width: "100%",
                       padding: "var(--space-3) var(--space-4)",
@@ -162,6 +190,7 @@ export function ContatoSection() {
                       color: "var(--color-black)",
                       outline: "none",
                       cursor: "pointer",
+                      transition: "border-color 0.3s ease, box-shadow 0.3s ease",
                     }}
                   >
                     <option value="">Selecione uma área</option>
@@ -181,6 +210,7 @@ export function ContatoSection() {
                   </label>
                   <textarea
                     id="message"
+                    name="message"
                     rows={4}
                     placeholder="Descreva brevemente o seu caso..."
                     style={{
@@ -193,7 +223,7 @@ export function ContatoSection() {
                       color: "var(--color-black)",
                       outline: "none",
                       resize: "vertical",
-                      transition: "border-color var(--transition-base)",
+                      transition: "border-color 0.3s ease, box-shadow 0.3s ease",
                     }}
                   />
                 </div>

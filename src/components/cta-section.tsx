@@ -1,32 +1,24 @@
 import { ScrollReveal } from "@/components/scroll-reveal";
+import { FlipWords } from "@/components/ui/flip-words";
+import { BackgroundBeams } from "@/components/ui/background-beams";
+
+const FLIP_WORDS = [
+  "orientação jurídica",
+  "segurança para sua família",
+  "defender seus direitos",
+  "planejar sua sucessão",
+];
 
 export function CTASection() {
   return (
-    <section className="relative overflow-hidden" style={{ backgroundColor: "var(--color-primary)" }}>
-      {/* Decorative circles */}
-      <div
-        className="absolute pointer-events-none"
-        style={{
-          top: "-30%",
-          right: "-10%",
-          width: 500,
-          height: 500,
-          borderRadius: "var(--radius-full)",
-          border: "1px solid rgba(255,255,255,0.1)",
-        }}
+    <section
+      className="relative"
+      style={{ backgroundColor: "var(--color-primary)", overflow: "hidden" }}
+    >
+      <BackgroundBeams
+        beamCount={12}
+        color="rgba(255,255,255,0.18)"
       />
-      <div
-        className="absolute pointer-events-none"
-        style={{
-          bottom: "-40%",
-          left: "-5%",
-          width: 400,
-          height: 400,
-          borderRadius: "var(--radius-full)",
-          border: "1px solid rgba(255,255,255,0.07)",
-        }}
-      />
-
       <div className="container-global section-padding relative" style={{ zIndex: 1 }}>
         <div
           className="grid grid-cols-1 lg:grid-cols-2 items-center"
@@ -34,8 +26,15 @@ export function CTASection() {
         >
           <ScrollReveal animation="fade-up">
             <h2 className="heading-2" style={{ color: "var(--color-white)" }}>
-              Precisa de{" "}
-              <span style={{ color: "var(--color-gold)" }}>orientação jurídica</span>?
+              Precisa de
+              <span style={{ display: "block", height: "1.3em" }}>
+                <FlipWords
+                  words={FLIP_WORDS}
+                  duration={3000}
+                  style={{ color: "var(--color-gold)" }}
+                />
+                ?
+              </span>
               Estou aqui para ajudar.
             </h2>
           </ScrollReveal>

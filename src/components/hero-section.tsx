@@ -1,14 +1,20 @@
+"use client";
+
 import Image from "next/image";
 import { ScrollReveal } from "@/components/scroll-reveal";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import { motion } from "framer-motion";
+import { Spotlight } from "@/components/ui/spotlight";
 
 export function HeroSection() {
   return (
     <section
       id="inicio"
-      className="relative flex items-end overflow-hidden"
+      className="relative overflow-hidden"
       style={{
         minHeight: "100vh",
         backgroundColor: "var(--color-dark)",
+        display: "flex",
       }}
     >
       {/* Background grain texture */}
@@ -21,156 +27,115 @@ export function HeroSection() {
         }}
       />
 
-      {/* Subtle gradient overlay */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            "linear-gradient(180deg, rgba(15,15,15,0.3) 0%, rgba(15,15,15,0.1) 40%, rgba(15,15,15,0.7) 100%)",
-        }}
+      {/* Spotlight glow on text area */}
+      <Spotlight
+        fill="#C9A96E"
+        size={1000}
+        className="-top-40 -left-20 hidden lg:block"
       />
 
-      {/* Gold decorative line */}
+      {/* Image — bleeds to right edge on desktop */}
       <div
         className="absolute hidden lg:block"
         style={{
           top: 0,
-          right: "8%",
-          width: 1,
-          height: "40%",
-          background:
-            "linear-gradient(180deg, transparent 0%, var(--color-gold) 40%, var(--color-gold) 60%, transparent 100%)",
-          opacity: 0.25,
+          right: 0,
+          bottom: 0,
+          width: "50%",
         }}
-      />
-
-      <div className="container-global relative" style={{ zIndex: 1 }}>
+      >
+        <Image
+          src="/hero/hero.png"
+          alt="Retrato profissional de Larissa Muller Medeiros, advogada"
+          fill
+          sizes="50vw"
+          priority
+          style={{ objectFit: "cover", objectPosition: "top center" }}
+        />
+        {/* Gradient fade into dark background */}
         <div
-          className="grid grid-cols-1 lg:grid-cols-2 items-end"
-          style={{ gap: "var(--space-8)", paddingBottom: "var(--space-12)" }}
-        >
-          {/* Left: Text content */}
-          <div style={{ paddingTop: "calc(80px + var(--space-16))" }}>
-            <ScrollReveal animation="fade-up">
-              <p className="text-tiny" style={{ color: "var(--color-gold)", marginBottom: "var(--space-5)" }}>
-                Advocacia &mdash; Braço do Norte, SC
-              </p>
-            </ScrollReveal>
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(90deg, var(--color-dark) 0%, rgba(15,15,15,0.4) 30%, transparent 60%)",
+          }}
+        />
+        {/* Bottom fade */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(180deg, transparent 60%, var(--color-dark) 100%)",
+          }}
+        />
+      </div>
 
-            <ScrollReveal animation="fade-up" delay={100}>
-              <h1
-                className="heading-1"
-                style={{ color: "var(--color-white)", marginBottom: "var(--space-6)" }}
-              >
-                Larissa
-                <br />
-                Muller
-                <br />
-                <span style={{ color: "var(--color-gold)" }}>Medeiros</span>
-              </h1>
-            </ScrollReveal>
-
-            <ScrollReveal animation="fade-up" delay={200}>
-              <div
-                style={{
-                  width: 60,
-                  height: 3,
-                  background: "linear-gradient(90deg, var(--color-gold), var(--color-primary))",
-                  marginBottom: "var(--space-5)",
-                }}
-              />
-            </ScrollReveal>
-
-            <ScrollReveal animation="fade-up" delay={300}>
-              <p
-                className="text-body-large"
-                style={{
-                  color: "var(--color-white-60)",
-                  maxWidth: 480,
-                  marginBottom: "var(--space-8)",
-                }}
-              >
-                Atuação dedicada em Direito da Família, Sucessório e Trabalhista.
-                Comprometida em oferecer soluções jurídicas seguras, humanas e
-                eficientes para cada cliente.
-              </p>
-            </ScrollReveal>
-
-            <ScrollReveal animation="fade-up" delay={400}>
-              <div className="flex flex-wrap items-center" style={{ gap: "var(--space-4)" }}>
-                <a href="#contato" className="btn-primary" style={{ textDecoration: "none" }}>
-                  Agende uma Consulta
-                </a>
-                <a
-                  href="#areas"
-                  className="btn-text"
-                  style={{ color: "var(--color-white-80)", textDecoration: "none" }}
-                >
-                  Conheça minhas áreas <span aria-hidden="true">&rarr;</span>
-                </a>
-              </div>
-            </ScrollReveal>
-          </div>
-
-          {/* Right: Hero portrait placeholder */}
-          <ScrollReveal animation="scale-in" delay={300}>
-            <div
-              className="relative hidden lg:block"
-              style={{ paddingTop: "calc(80px + var(--space-10))" }}
+      {/* Content */}
+      <div
+        className="container-global relative flex flex-col justify-center"
+        style={{ zIndex: 1, minHeight: "100vh" }}
+      >
+        <div style={{ maxWidth: 560, paddingTop: 80, paddingBottom: "var(--space-16)" }}>
+          <ScrollReveal animation="fade-up">
+            <p
+              className="text-tiny"
+              style={{ color: "var(--color-gold)", marginBottom: "var(--space-5)" }}
             >
-              <div
-                style={{
-                  position: "relative",
-                  width: "100%",
-                  aspectRatio: "3/4",
-                  maxWidth: 520,
-                  marginLeft: "auto",
-                }}
-              >
-                {/* Gold frame accent */}
-                <div
-                  className="absolute"
-                  style={{
-                    top: -12,
-                    right: -12,
-                    width: "60%",
-                    height: "40%",
-                    border: "1px solid var(--color-gold)",
-                    opacity: 0.3,
-                  }}
-                />
-                <div
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    position: "relative",
-                    overflow: "hidden",
-                  }}
-                >
-                  <Image
-                    src="/hero/hero.png"
-                    alt="Retrato profissional de Larissa Muller Medeiros, advogada"
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 520px"
-                    priority
-                    style={{ objectFit: "cover" }}
-                  />
-                </div>
-                {/* Purple accent bottom */}
-                <div
-                  className="absolute"
-                  style={{
-                    bottom: -8,
-                    left: -8,
-                    width: 80,
-                    height: 80,
-                    backgroundColor: "var(--color-primary)",
-                    opacity: 0.15,
-                  }}
-                />
-              </div>
-            </div>
+              Advocacia &mdash; Braço do Norte, SC
+            </p>
           </ScrollReveal>
+
+          <motion.h1
+            className="heading-1"
+            style={{ color: "var(--color-white)", marginBottom: "var(--space-6)" }}
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          >
+            Larissa
+            <br />
+            Muller
+            <br />
+            <span style={{ color: "var(--color-gold)" }}>Medeiros</span>
+          </motion.h1>
+
+          <motion.div
+            initial={{ width: 0 }}
+            animate={{ width: 60 }}
+            transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
+            style={{
+              height: 3,
+              background: "linear-gradient(90deg, var(--color-gold), var(--color-primary))",
+              marginBottom: "var(--space-5)",
+            }}
+          />
+
+          <TextGenerateEffect
+            words="Atuação dedicada em Direito da Família, Sucessório e Trabalhista. Comprometida em oferecer soluções jurídicas seguras, humanas e eficientes para cada cliente."
+            className="text-body-large"
+            style={{ color: "var(--color-white)", maxWidth: 480 }}
+            duration={0.4}
+            filter={false}
+          />
+
+          <motion.div
+            className="flex flex-wrap items-center"
+            style={{ gap: "var(--space-4)", marginTop: "var(--space-8)" }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.4, ease: "easeOut" }}
+          >
+            <a href="#contato" className="btn-primary" style={{ textDecoration: "none" }}>
+              Agende uma Consulta
+            </a>
+            <a
+              href="#areas"
+              className="btn-text"
+              style={{ color: "var(--color-white-80)", textDecoration: "none" }}
+            >
+              Conheça minhas áreas <span aria-hidden="true">&rarr;</span>
+            </a>
+          </motion.div>
         </div>
 
         {/* Scroll indicator */}
@@ -195,6 +160,20 @@ export function HeroSection() {
             </span>
           </div>
         </ScrollReveal>
+      </div>
+
+      {/* Mobile: Image as subtle background */}
+      <div
+        className="lg:hidden absolute inset-0"
+        style={{ opacity: 0.15 }}
+      >
+        <Image
+          src="/hero/hero.png"
+          alt=""
+          fill
+          sizes="100vw"
+          style={{ objectFit: "cover", objectPosition: "top center" }}
+        />
       </div>
     </section>
   );

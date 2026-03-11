@@ -1,6 +1,14 @@
 export function Footer() {
   return (
     <footer style={{ backgroundColor: "var(--color-dark)" }}>
+      {/* Gold separator line */}
+      <div
+        style={{
+          height: 1,
+          background: "linear-gradient(90deg, transparent, var(--color-gold), transparent)",
+          opacity: 0.3,
+        }}
+      />
       <div className="container-global" style={{ paddingBlock: "var(--space-12)" }}>
         <div
           className="grid grid-cols-1 md:grid-cols-12"

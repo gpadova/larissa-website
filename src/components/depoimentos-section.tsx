@@ -1,20 +1,21 @@
 import { ScrollReveal } from "@/components/scroll-reveal";
+import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 
 const DEPOIMENTOS = [
   {
-    text: "A Larissa foi extremamente atenciosa e profissional durante todo o processo do meu divórcio. Me senti acolhida e segura em cada etapa. Recomendo de olhos fechados.",
+    quote: "A Larissa foi extremamente atenciosa e profissional durante todo o processo do meu divórcio. Me senti acolhida e segura em cada etapa. Recomendo de olhos fechados.",
     name: "Maria C.",
-    area: "Direito da Família",
+    designation: "Direito da Família",
   },
   {
-    text: "Precisei de orientação para o inventário do meu pai e a Dra. Larissa conduziu tudo com muita competência e sensibilidade. O processo foi muito mais tranquilo do que eu esperava.",
+    quote: "Precisei de orientação para o inventário do meu pai e a Dra. Larissa conduziu tudo com muita competência e sensibilidade. O processo foi muito mais tranquilo do que eu esperava.",
     name: "João P.",
-    area: "Direito Sucessório",
+    designation: "Direito Sucessório",
   },
   {
-    text: "Fui demitido de forma injusta e a Larissa me ajudou a entender meus direitos e buscar a compensação devida. Profissional dedicada e transparente do início ao fim.",
+    quote: "Fui demitido de forma injusta e a Larissa me ajudou a entender meus direitos e buscar a compensação devida. Profissional dedicada e transparente do início ao fim.",
     name: "Roberto S.",
-    area: "Direito Trabalhista",
+    designation: "Direito Trabalhista",
   },
 ];
 
@@ -47,43 +48,15 @@ export function DepoimentosSection() {
             </div>
           </div>
 
-          {/* Right: Testimonials */}
-          <div className="lg:col-span-8 grid gap-0">
-            {DEPOIMENTOS.map((dep, i) => (
-              <ScrollReveal key={i} animation="fade-up" delay={i * 100}>
-                <div
-                  style={{
-                    paddingBlock: "var(--space-8)",
-                    borderBottom: "1px solid var(--color-gray-200)",
-                  }}
-                >
-                  <p
-                    style={{
-                      fontSize: "var(--font-size-lg)",
-                      lineHeight: "var(--leading-relaxed)",
-                      color: "var(--color-black)",
-                      fontStyle: "italic",
-                      marginBottom: "var(--space-5)",
-                    }}
-                  >
-                    &ldquo;{dep.text}&rdquo;
-                  </p>
-                  <div className="flex items-center" style={{ gap: "var(--space-3)" }}>
-                    <span className="heading-6" style={{ color: "var(--color-primary)" }}>
-                      {dep.name}
-                    </span>
-                    <div
-                      style={{
-                        width: 1,
-                        height: 16,
-                        backgroundColor: "var(--color-gray-300)",
-                      }}
-                    />
-                    <span className="text-small">{dep.area}</span>
-                  </div>
-                </div>
-              </ScrollReveal>
-            ))}
+          {/* Right: Animated Testimonials */}
+          <div className="lg:col-span-8 flex items-center">
+            <ScrollReveal animation="fade-up" delay={300}>
+              <AnimatedTestimonials
+                testimonials={DEPOIMENTOS}
+                autoplay
+                interval={6000}
+              />
+            </ScrollReveal>
           </div>
         </div>
       </div>
