@@ -15,8 +15,25 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Larissa",
-  description: "Larissa's personal website",
+  title: "Larissa Muller Medeiros | Advogada — Braço do Norte, SC",
+  description:
+    "Advogada com atuação em Direito da Família, Sucessório e Trabalhista. Atendimento humanizado em Braço do Norte, Santa Catarina.",
+  keywords: [
+    "advogada",
+    "Braço do Norte",
+    "direito da família",
+    "direito sucessório",
+    "direito trabalhista",
+    "advocacia",
+    "Santa Catarina",
+  ],
+  openGraph: {
+    title: "Larissa Muller Medeiros | Advogada",
+    description:
+      "Advocacia com dedicação e sensibilidade. Direito da Família, Sucessório e Trabalhista em Braço do Norte, SC.",
+    locale: "pt_BR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
