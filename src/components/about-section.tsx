@@ -1,4 +1,5 @@
 import { ScrollReveal } from "@/components/scroll-reveal";
+import Image from "next/image";
 
 export function AboutSection() {
   return (
@@ -26,9 +27,7 @@ export function AboutSection() {
                   justifyContent: "center",
                 }}
               >
-                {/* Replace with Image from next/image when photo is available:
-                    <Image src="/about/photo.png" alt="Larissa Muller Medeiros em seu escritório" fill sizes="(max-width: 1024px) 100vw, 500px" style={{ objectFit: "cover" }} />
-                */}
+                    <Image src="/sobre/sobre.png" alt="Larissa Muller Medeiros em seu escritório" fill sizes="(max-width: 1024px) 100vw, 500px" style={{ objectFit: "cover" }} />
                 <div style={{ textAlign: "center", padding: "var(--space-6)" }}>
                   <div
                     style={{
