@@ -1,4 +1,5 @@
 import { ScrollReveal } from "@/components/scroll-reveal";
+import Image from "next/image";
 
 const AREAS = [
   {
@@ -11,8 +12,9 @@ const AREAS = [
       "Pensão alimentícia",
       "União estável",
     ],
+    imgSrc: "/areas/familia.png",
     imgAlt:
-      "Fotografia documental em close de duas mãos entrelaçadas — uma mão de pessoa idosa segurando a mão de uma pessoa jovem — sobre uma mesa de madeira clara, luz natural suave vinda de janela, formato paisagem 4:3, lente macro 100mm f/2.8, profundidade de campo muito rasa com bokeh cremoso no fundo, tons quentes de bege e dourado, sem saturação artificial, textura real da pele com veias e rugas visíveis, fotografia analógica com filme Kodak Portra 400, grão de filme visível, sem efeitos digitais, sem brilho artificial, qualidade 8K",
+      "Close em duas alianças de ouro apoiadas sobre as páginas abertas de um livro antigo de capa de couro, com pétalas secas de rosa espalhadas ao redor. Mesa de madeira clara com marcas naturais de uso. Luz natural suave e dourada vinda de janela lateral, criando sombras longas e delicadas. Formato paisagem 4:3, lente macro 100mm f/2.8, profundidade de campo muito rasa com bokeh cremoso no fundo, tons quentes de bege, dourado e marfim. Fotografia analógica com filme Kodak Portra 400, grão de filme visível, texturas reais do ouro, do papel e da madeira, sem efeitos digitais, sem brilho artificial, qualidade 8K",
   },
   {
     title: "Direito Sucessório",
@@ -24,8 +26,9 @@ const AREAS = [
       "Partilha de bens",
       "Planejamento sucessório",
     ],
+    imgSrc: "/areas/sucessorio.png",
     imgAlt:
-      "Fotografia still life de natureza morta jurídica: caneta tinteiro dourada sobre testamento antigo de papel amarelado com selo de cera, ao lado de óculos de leitura e um livro de capa de couro marrom aberto, tudo sobre mesa de mogno escuro envernizado, iluminação lateral vinda de luminária de mesa com abajur verde clássico, formato paisagem 4:3, lente 35mm f/2.0, profundidade de campo rasa, tons âmbar e marrom escuro, atmosfera de escritório tradicional, fotografia real com câmera Nikon Z8, sem pós-processamento exagerado, texturas naturais do papel e couro visíveis, grão fotográfico sutil, qualidade 8K",
+      "Caneta tinteiro dourada apoiada sobre um testamento antigo de papel amarelado com selo de cera vermelha, ao lado de óculos de leitura com armação fina e um livro grosso de capa de couro marrom aberto na metade. Tudo sobre mesa de mogno escuro envernizado com reflexos suaves. Iluminação lateral vinda de luminária de mesa com abajur verde clássico de vidro, criando sombras dramáticas. Formato paisagem 4:3, lente 35mm f/2.0, profundidade de campo rasa, tons âmbar e marrom escuro, atmosfera de escritório tradicional e clássico. Texturas naturais do papel envelhecido, do couro gasto e da madeira visíveis, sem pós-processamento exagerado, grão fotográfico sutil, qualidade 8K",
   },
   {
     title: "Judicial e Extrajudicial",
@@ -37,8 +40,9 @@ const AREAS = [
       "Propositura e acompanhamento de ações",
       "Defesa técnica em processos judiciais",
     ],
+    imgSrc: "/areas/extra.png",
     imgAlt:
-      "Fotografia editorial de ambiente de trabalho moderno: laptop aberto sobre mesa branca ao lado de xícara de café, caderno de anotações com caneta, e carteira de trabalho brasileira (CTPS) azul parcialmente visível, planta pequena suculenta no canto, luz natural difusa de janela grande ao fundo com cortina branca translúcida, formato paisagem 4:3, lente 28mm f/2.8, composição minimalista com bastante espaço negativo, tons neutros de branco, cinza claro e toques de azul, fotografia de produto real com câmera Fujifilm X-T5, simulação de filme Fuji Pro 400H, sem HDR, sem cores neon, texturas reais visíveis na madeira e no tecido, qualidade 8K",
+      "Martelo de juiz de madeira escura com detalhes dourados apoiado sobre sua base redonda, ao lado de uma balança da justiça de bronze polido e uma pilha organizada de documentos com clips metálicos, tudo sobre mesa de vidro com superfície limpa e reflexo sutil. Ao fundo desfocado, estante com códigos de lei de lombada escura. Luz natural difusa de janela grande com cortina branca translúcida, criando ambiente limpo e profissional. Formato paisagem 4:3, lente 28mm f/2.8, composição minimalista com bastante espaço negativo, tons neutros de cinza, branco e bronze. Texturas reais da madeira, do metal e do papel visíveis, sem HDR, sem cores artificiais, grão fotográfico sutil, qualidade 8K",
   },
 ];
 
@@ -137,9 +141,7 @@ export function AreasSection() {
                       position: "relative",
                     }}
                   >
-                    {/* Replace with Image from next/image when photos are available:
-                        <Image src={area.imgSrc} alt={area.imgAlt} fill sizes="(max-width: 1024px) 100vw, 33vw" style={{ objectFit: "cover" }} />
-                    */}
+                    <Image src={area.imgSrc} alt={area.imgAlt} fill sizes="(max-width: 1024px) 100vw, 33vw" style={{ objectFit: "cover" }} />
                     <div style={{ textAlign: "center", padding: "var(--space-4)" }}>
                       <svg
                         width="24"
