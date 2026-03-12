@@ -3,8 +3,8 @@ import { FlipWords } from "@/components/ui/flip-words";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 
 const FLIP_WORDS = [
-  "orientação jurídica?",
-  "segurança para sua família?",
+  "de orientação jurídica?",
+  "de segurança para sua família?",
   "defender seus direitos?",
   "planejar sua sucessão?",
 ];
@@ -26,7 +26,7 @@ export function CTASection() {
         >
           <ScrollReveal animation="fade-up">
             <h2 className="heading-2" style={{ color: "var(--color-white)" }}>
-              Precisa de
+              Precisa
               <span style={{ display: "block", height: "1.3em" }}>
                 <FlipWords
                   words={FLIP_WORDS}
@@ -49,8 +49,7 @@ export function CTASection() {
                   maxWidth: 400,
                 }}
               >
-                O primeiro passo é uma conversa. Entre em contato e vamos
-                entender juntos a melhor solução para o seu caso.
+                Entre em contato e vamos entender juntos a melhor solução para o seu caso.
               </p>
               <a
                 href="#contato"
