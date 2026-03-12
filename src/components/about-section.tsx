@@ -96,9 +96,9 @@ export function AboutSection() {
                 Minha experiência inclui atuação no Tribunal de Justiça de Santa
                 Catarina e em escritórios de advocacia renomados, o que me
                 proporcionou uma visão ampla e prática do Direito. Hoje, dedico
-                minha atuação às áreas de Direito da Família, Direito Sucessório e
-                Mediação e Conciliação, sempre priorizando a segurança jurídica e o
-                bem-estar dos meus clientes.
+                minha atuação às áreas de Direito da Família, Direito Sucessório,
+                sempre priorizando a segurança jurídica e o
+                bem-estar dos meus clientes, com atendimentos humanizados.
               </p>
             </ScrollReveal>
 
