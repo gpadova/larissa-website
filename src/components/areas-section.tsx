@@ -23,7 +23,7 @@ const AREAS = [
       "Acompanhamento completo em processos de inventário, partilha de bens, testamentos e planejamento sucessório.",
     items: [
       "Inventário judicial e extrajudicial",
-      "Testamentos e codicilos",
+      "Testamentos",
       "Partilha de bens",
       "Planejamento sucessório",
     ],
