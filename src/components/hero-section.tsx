@@ -81,7 +81,7 @@ export function HeroSection() {
               className="text-tiny"
               style={{ color: "var(--color-gold)", marginBottom: "var(--space-5)" }}
             >
-              Advocacia &mdash; Atendimento em todo o Brasil
+              Advocacia &mdash; Braço do Norte, SC &mdash; Atendimento em todo o Brasil
             </p>
           </ScrollReveal>
 
