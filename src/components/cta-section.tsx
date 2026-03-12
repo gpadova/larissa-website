@@ -71,7 +71,7 @@ export function CTASection() {
                   transition: "transform var(--transition-fast), box-shadow var(--transition-base)",
                 }}
               >
-                Agende uma Consulta
+                Fale conosco
               </a>
             </div>
           </ScrollReveal>
