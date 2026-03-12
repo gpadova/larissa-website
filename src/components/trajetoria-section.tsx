@@ -153,31 +153,31 @@ const TIMELINE_DATA = [
       </div>
     ),
   },
-  {
-    title: "2026 — Presente",
-    content: (
-      <div>
-        <h3
-          style={{
-            fontFamily: "var(--font-display)",
-            fontSize: "var(--font-size-xl)",
-            fontWeight: 600,
-            color: "var(--color-white)",
-            lineHeight: "var(--leading-snug)",
-            marginBottom: "var(--space-2)",
-          }}
-        >
-          Mediadora e Conciliadora
-        </h3>
-        <p className="text-small" style={{ color: "var(--color-primary-light)", marginBottom: "var(--space-3)" }}>
-          Tribunal de Justiça de Santa Catarina — TJSC
-        </p>
-        <p className="text-body" style={{ color: "var(--color-white-60)" }}>
-          Credenciada como mediadora e conciliadora judicial, atuando na resolução consensual de conflitos com foco em diálogo e equilíbrio entre as partes.
-        </p>
-      </div>
-    ),
-  },
+  // {
+  //   title: "2026 — Presente",
+  //   content: (
+  //     <div>
+  //       <h3
+  //         style={{
+  //           fontFamily: "var(--font-display)",
+  //           fontSize: "var(--font-size-xl)",
+  //           fontWeight: 600,
+  //           color: "var(--color-white)",
+  //           lineHeight: "var(--leading-snug)",
+  //           marginBottom: "var(--space-2)",
+  //         }}
+  //       >
+  //         Mediadora e Conciliadora
+  //       </h3>
+  //       <p className="text-small" style={{ color: "var(--color-primary-light)", marginBottom: "var(--space-3)" }}>
+  //         Tribunal de Justiça de Santa Catarina — TJSC
+  //       </p>
+  //       <p className="text-body" style={{ color: "var(--color-white-60)" }}>
+  //         Credenciada como mediadora e conciliadora judicial, atuando na resolução consensual de conflitos com foco em diálogo e equilíbrio entre as partes.
+  //       </p>
+  //     </div>
+  //   ),
+  // },
 ];
 
 export function TrajetoriaSection() {

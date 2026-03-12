@@ -94,9 +94,9 @@ export function HeroSection() {
           >
             Larissa
             <br />
-            Müller
+            <span style={{ color: "var(--color-gold)" }}>Müller</span>
             <br />
-            <span style={{ color: "var(--color-gold)" }}>Medeiros</span>
+            Medeiros
           </motion.h1>
 
           <motion.div
