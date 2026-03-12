@@ -111,7 +111,7 @@ export function HeroSection() {
           />
 
           <TextGenerateEffect
-            words="Atuação dedicada em Direito da Família, Sucessório e Mediação. Comprometida em oferecer soluções jurídicas seguras, humanas e eficientes para cada cliente."
+            words="Atuação dedicada em Direito das Famílias, Direito Sucessório, Judicialmente e Extrajudicialmente. Comprometida em oferecer soluções jurídicas seguras, humanas e eficientes para cada cliente."
             className="text-body-large"
             style={{ color: "var(--color-white)", maxWidth: 480 }}
             duration={0.4}
