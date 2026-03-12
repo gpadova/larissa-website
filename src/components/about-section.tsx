@@ -98,7 +98,8 @@ export function AboutSection() {
                 proporcionou uma visão ampla e prática do Direito. Hoje, dedico
                 minha atuação às áreas de Direito da Família, Direito Sucessório,
                 sempre priorizando a segurança jurídica e o
-                bem-estar dos meus clientes, com atendimentos humanizados.
+                bem-estar dos meus clientes, com atendimentos humanizados. 
+                Atualmente estou cursando o curso de Mediação e Conciliação pela ESMESC.
               </p>
             </ScrollReveal>
 
