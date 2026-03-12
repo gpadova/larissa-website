@@ -23,19 +23,19 @@ const AREAS = [
       "Acompanhamento completo em processos de inventário, partilha de bens, testamentos e planejamento sucessório.",
     items: [
       "Inventário judicial e extrajudicial",
-      "Testamentos",
+      "Testamentos e codicilos",
       "Partilha de bens",
       "Planejamento sucessório",
     ],
   },
   {
-    title: "Judicial e Extrajudicial",
+    title: "Atuação Judicial e Extrajudicial",
     src: "/areas/extra.png",
     alt: "Imagem representativa de atuação Judicial e Extrajudicial",
     description:
       "Atuação estratégica tanto na via judicial quanto na extrajudicial, com foco em prevenção de conflitos e segurança jurídica.",
     items: [
-      "Mediação e acordos extrajudiciais",
+      "Elaboração de acordos",
       "Notificações e negociações formais",
       "Propositura e acompanhamento de ações",
       "Defesa técnica em processos judiciais",
