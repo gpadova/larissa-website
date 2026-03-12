@@ -85,7 +85,7 @@ export function AboutSection() {
             <ScrollReveal animation="fade-up" delay={200}>
               <p className="text-body" style={{ marginBottom: "var(--space-4)" }}>
                 Sou Larissa Müller Medeiros, advogada formada pela Universidade do
-                Sul de Santa Catarina (UNISUL), com atendimento online para todo o Brasil.
+                Sul de Santa Catarina (UNISUL), especializada em Direito das Famílias e Sucessões pela FMP/RS. Com atendimento online para todo o Brasil.
                 Desde o início da minha carreira, busco aliar conhecimento técnico a
                 um atendimento verdadeiramente humano.
               </p>
