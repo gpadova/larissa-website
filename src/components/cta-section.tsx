@@ -24,20 +24,6 @@ export function CTASection() {
           className="grid grid-cols-1 lg:grid-cols-2 items-center"
           style={{ gap: "var(--space-8)" }}
         >
-          <ScrollReveal animation="fade-up">
-            <h2 className="heading-2" style={{ color: "var(--color-white)" }}>
-              Precisa de
-              <span style={{ display: "block", height: "1.3em" }}>
-                <FlipWords
-                  words={FLIP_WORDS}
-                  duration={3000}
-                  style={{ color: "var(--color-gold)" }}
-                />
-                ?
-              </span>
-              Estou aqui para ajudar.
-            </h2>
-          </ScrollReveal>
 
           <ScrollReveal animation="fade-up" delay={150}>
             <div
