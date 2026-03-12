@@ -27,7 +27,7 @@ export function AboutSection() {
                   justifyContent: "center",
                 }}
               >
-                    <Image src="/sobre/sobre.png" alt="Larissa Muller Medeiros em seu escritório" fill sizes="(max-width: 1024px) 100vw, 500px" style={{ objectFit: "cover" }} />
+                    <Image src="/sobre/sobre.png" alt="Larissa Müller Medeiros em seu escritório" fill sizes="(max-width: 1024px) 100vw, 500px" style={{ objectFit: "cover" }} />
                 <div style={{ textAlign: "center", padding: "var(--space-6)" }}>
                   <div
                     style={{
@@ -84,8 +84,8 @@ export function AboutSection() {
 
             <ScrollReveal animation="fade-up" delay={200}>
               <p className="text-body" style={{ marginBottom: "var(--space-4)" }}>
-                Sou Larissa Muller Medeiros, advogada formada pela Universidade do
-                Sul de Santa Catarina (UNISUL), com atuação em Braço do Norte, SC.
+                Sou Larissa Müller Medeiros, advogada formada pela Universidade do
+                Sul de Santa Catarina (UNISUL), com atendimento online para todo o Brasil.
                 Desde o início da minha carreira, busco aliar conhecimento técnico a
                 um atendimento verdadeiramente humano.
               </p>
@@ -94,10 +94,10 @@ export function AboutSection() {
             <ScrollReveal animation="fade-up" delay={300}>
               <p className="text-body" style={{ marginBottom: "var(--space-6)" }}>
                 Minha experiência inclui atuação no Tribunal de Justiça de Santa
-                Catarina e em escritórios de advocacia renomados da região, o que me
+                Catarina e em escritórios de advocacia renomados, o que me
                 proporcionou uma visão ampla e prática do Direito. Hoje, dedico
                 minha atuação às áreas de Direito da Família, Direito Sucessório e
-                Direito Trabalhista, sempre priorizando a segurança jurídica e o
+                Mediação e Conciliação, sempre priorizando a segurança jurídica e o
                 bem-estar dos meus clientes.
               </p>
             </ScrollReveal>

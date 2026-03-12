@@ -46,7 +46,7 @@ export function HeroSection() {
       >
         <Image
           src="/hero/hero.png"
-          alt="Retrato profissional de Larissa Muller Medeiros, advogada"
+          alt="Retrato profissional de Larissa Müller Medeiros, advogada"
           fill
           sizes="50vw"
           priority
@@ -81,7 +81,7 @@ export function HeroSection() {
               className="text-tiny"
               style={{ color: "var(--color-gold)", marginBottom: "var(--space-5)" }}
             >
-              Advocacia &mdash; Braço do Norte, SC
+              Advocacia &mdash; Atendimento em todo o Brasil
             </p>
           </ScrollReveal>
 
@@ -94,7 +94,7 @@ export function HeroSection() {
           >
             Larissa
             <br />
-            Muller
+            Müller
             <br />
             <span style={{ color: "var(--color-gold)" }}>Medeiros</span>
           </motion.h1>
@@ -111,7 +111,7 @@ export function HeroSection() {
           />
 
           <TextGenerateEffect
-            words="Atuação dedicada em Direito da Família, Sucessório e Trabalhista. Comprometida em oferecer soluções jurídicas seguras, humanas e eficientes para cada cliente."
+            words="Atuação dedicada em Direito da Família, Sucessório e Mediação. Comprometida em oferecer soluções jurídicas seguras, humanas e eficientes para cada cliente."
             className="text-body-large"
             style={{ color: "var(--color-white)", maxWidth: 480 }}
             duration={0.4}

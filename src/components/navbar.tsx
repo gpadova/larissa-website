@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const NAV_LINKS = [
   { label: "Início", href: "#inicio" },
@@ -56,16 +57,9 @@ export function Navbar() {
           {/* Logo */}
           <a
             href="#inicio"
-            style={{
-              fontFamily: "var(--font-display)",
-              fontSize: "var(--font-size-xl)",
-              fontWeight: 700,
-              color: "var(--color-white)",
-              textDecoration: "none",
-              letterSpacing: "var(--tracking-tight)",
-            }}
+            className="size-40"
           >
-            Larissa<span style={{ color: "var(--color-gold)" }}>.</span>
+            <Image src="/logo/logo-dark-without-footer.png" alt="Larissa Müller Medeiros" width={300} height={300} className="w-full h-full object-contain" />
           </a>
 
           {/* Desktop links */}

@@ -1,3 +1,6 @@
+import Image from "next/image";
+import { CONTACT } from "@/lib/constants";
+
 export function Footer() {
   return (
     <footer style={{ backgroundColor: "var(--color-dark)" }}>
@@ -19,16 +22,19 @@ export function Footer() {
             <a
               href="#inicio"
               style={{
-                fontFamily: "var(--font-display)",
-                fontSize: "var(--font-size-2xl)",
-                fontWeight: 700,
-                color: "var(--color-white)",
-                textDecoration: "none",
-                display: "inline-block",
-                marginBottom: "var(--space-4)",
+                display: "block",
+                width: "min(100%, 340px)",
+                marginBottom: "var(--space-5)",
               }}
             >
-              Larissa<span style={{ color: "var(--color-gold)" }}>.</span>
+              <Image
+                src="/logo/logo-dark-without-footer.png"
+                alt="Larissa Müller Medeiros"
+                width={680}
+                height={180}
+                className="h-auto w-full object-contain"
+                priority
+              />
             </a>
             <p
               className="text-body"
@@ -39,11 +45,13 @@ export function Footer() {
               }}
             >
               Advocacia com dedicação, empatia e compromisso com a justiça.
-              Braço do Norte, Santa Catarina.
+              Atendimento online para todo o Brasil.
             </p>
             <div className="flex items-center" style={{ gap: "var(--space-3)" }}>
               <a
-                href="#"
+                href={CONTACT.instagram.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
                 style={{
                   width: 40,
@@ -65,7 +73,7 @@ export function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/in/larissa-muller-medeiros-2607-lmm/"
+                href={CONTACT.linkedin.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -132,7 +140,7 @@ export function Footer() {
             >
               Áreas de Atuação
             </span>
-            {["Direito da Família", "Direito Sucessório", "Direito Trabalhista"].map((area) => (
+            {["Direito da Família", "Direito Sucessório", "Mediação e Conciliação"].map((area) => (
               <a
                 key={area}
                 href="#areas"
@@ -163,10 +171,10 @@ export function Footer() {
           }}
         >
           <p className="text-small" style={{ color: "var(--color-white-60)" }}>
-            &copy; 2026 Larissa Muller Medeiros &mdash; OAB/SC. Todos os direitos reservados.
+            &copy; 2026 Larissa Müller Medeiros &mdash; OAB/SC. Todos os direitos reservados.
           </p>
           <p className="text-small" style={{ color: "var(--color-white-60)" }}>
-            Braço do Norte, Santa Catarina, Brasil
+            Base em Braço do Norte, SC &mdash; Atendimento online para todo o Brasil
           </p>
         </div>
       </div>

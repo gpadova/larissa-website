@@ -15,22 +15,26 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Larissa Muller Medeiros | Advogada — Braço do Norte, SC",
+  title: "Larissa Müller Medeiros | Advogada e Mediadora — Atendimento Online",
   description:
-    "Advogada com atuação em Direito da Família, Sucessório e Trabalhista. Atendimento humanizado em Braço do Norte, Santa Catarina.",
+    "Advogada com atuação em Direito da Família, Sucessório e Mediação. Atendimento online para todo o Brasil com dedicação e sensibilidade.",
   keywords: [
+    "advogada online",
     "advogada",
-    "Braço do Norte",
     "direito da família",
     "direito sucessório",
-    "direito trabalhista",
-    "advocacia",
-    "Santa Catarina",
+    "mediação",
+    "conciliação",
+    "advocacia online",
+    "mediadora",
+    "atendimento online",
+    "consultoria jurídica",
+    "todo o Brasil",
   ],
   openGraph: {
-    title: "Larissa Muller Medeiros | Advogada",
+    title: "Larissa Müller Medeiros | Advogada e Mediadora",
     description:
-      "Advocacia com dedicação e sensibilidade. Direito da Família, Sucessório e Trabalhista em Braço do Norte, SC.",
+      "Advocacia com dedicação e sensibilidade. Direito da Família, Sucessório e Mediação. Atendimento online para todo o Brasil.",
     locale: "pt_BR",
     type: "website",
   },

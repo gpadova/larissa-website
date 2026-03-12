@@ -13,9 +13,9 @@ const DEPOIMENTOS = [
     designation: "Direito Sucessório",
   },
   {
-    quote: "Fui demitido de forma injusta e a Larissa me ajudou a entender meus direitos e buscar a compensação devida. Profissional dedicada e transparente do início ao fim.",
-    name: "Roberto S.",
-    designation: "Direito Trabalhista",
+    quote: "A Larissa conduziu a mediação do nosso caso com muita habilidade e empatia. Conseguimos chegar a um acordo justo sem precisar de um processo longo. Muito grata pela condução imparcial e humana.",
+    name: "Fernanda L.",
+    designation: "Mediação e Conciliação",
   },
 ];
 
