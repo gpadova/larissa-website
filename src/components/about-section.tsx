@@ -27,7 +27,7 @@ export function AboutSection() {
                   justifyContent: "center",
                 }}
               >
-                    <Image src="/sobre/sobre.png" alt="Larissa Müller Medeiros em seu escritório" fill sizes="(max-width: 1024px) 100vw, 500px" style={{ objectFit: "cover" }} />
+                    <Image src="/sobre/sobre.jpg" alt="Larissa Müller Medeiros em seu escritório" fill sizes="(max-width: 1024px) 100vw, 500px" style={{ objectFit: "cover" }} />
                 <div style={{ textAlign: "center", padding: "var(--space-6)" }}>
                   <div
                     style={{
