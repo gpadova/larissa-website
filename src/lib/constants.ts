@@ -11,7 +11,7 @@ export const CONTACT = {
   linkedin: {
     url: "https://www.linkedin.com/in/larissa-muller-medeiros-2607-lmm/",
   },
-  email: "larisssmmedeiros26@gmail.com",
+  email: "70204@oab-sc.org.br",
   location: "Atendimento online — Todo o Brasil",
   base: "Braço do Norte, SC",
 } as const;
