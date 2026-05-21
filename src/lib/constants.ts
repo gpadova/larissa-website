@@ -11,7 +11,7 @@ export const CONTACT = {
   linkedin: {
     url: "https://www.linkedin.com/in/larissa-muller-medeiros-2607-lmm/",
   },
-  email: "contato@larissamedeiros.adv.br",
+  email: "larisssmmedeiros26@gmail.com",
   location: "Atendimento online — Todo o Brasil",
   base: "Braço do Norte, SC",
 } as const;
