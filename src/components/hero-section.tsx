@@ -81,7 +81,7 @@ export function HeroSection() {
               className="text-tiny"
               style={{ color: "var(--color-gold)", marginBottom: "var(--space-5)" }}
             >
-              Advocacia &mdash; Braço do Norte, SC &mdash; Atendimento em todo o Brasil
+              Advogada e Mediadora &mdash; Braço do Norte, SC &mdash; Atendimento em todo o Brasil
             </p>
           </ScrollReveal>
 
@@ -111,7 +111,7 @@ export function HeroSection() {
           />
 
           <TextGenerateEffect
-            words="Atuação dedicada em Direito das Famílias, Direito Sucessório, Judicialmente e Extrajudicialmente. Comprometida em oferecer soluções jurídicas seguras, humanas e eficientes para cada cliente."
+            words="Atuação dedicada em Direito das Famílias, Direito Sucessório e Mediação. Comprometida em oferecer soluções jurídicas seguras, humanas e eficientes para cada cliente."
             className="text-body-large"
             style={{ color: "var(--color-white)", maxWidth: 480 }}
             duration={0.4}

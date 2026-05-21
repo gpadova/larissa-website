@@ -96,10 +96,9 @@ export function AboutSection() {
                 Minha experiência inclui atuação no Tribunal de Justiça de Santa
                 Catarina e em escritórios de advocacia renomados, o que me
                 proporcionou uma visão ampla e prática do Direito. Hoje, dedico
-                minha atuação às áreas de Direito da Família, Direito Sucessório,
-                sempre priorizando a segurança jurídica e o
-                bem-estar dos meus clientes, com atendimentos humanizados. 
-                Atualmente estou cursando o curso de Mediação e Conciliação pela ESMESC.
+                minha atuação às áreas de Direito da Família, Direito Sucessório
+                e Mediação, sempre priorizando a segurança jurídica e o
+                bem-estar dos meus clientes, com atendimentos humanizados.
               </p>
             </ScrollReveal>
 
