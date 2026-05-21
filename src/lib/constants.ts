@@ -1,8 +1,8 @@
 export const CONTACT = {
   whatsapp: {
-    number: "5548999153677",
-    url: "https://wa.me/5555489915367?text=Ol%C3%A1%2C%20vim%20do%20seu%20site%2C%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.",
-    display: "(55) 48 9991-5367",
+    number: "5548991536780",
+    url: "https://wa.me/5548991536780?text=Ol%C3%A1%2C%20vim%20do%20seu%20site%2C%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.",
+    display: "(48) 99153-6780",
   },
   instagram: {
     handle: "@larissammadv",
